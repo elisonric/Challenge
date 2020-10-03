@@ -1,0 +1,40 @@
+
+server:
+  port: 8085
+  error:
+    include-stacktrace: never
+
+eureka:
+  instance:
+    prefer-ip-adress: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+    register-with-eureka: true
+
+spring:
+  application:
+    name: consult-cpf
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  jmx:
+    enabled: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/basec
+    username: readonly-user
+    password: Fi&kc%zA
+
+jwt:
+  config:
+    type: signed
+
+flyway:
+  url: jdbc:postgresql://localhost:5432/basec
+  schemas: public
+  user: "readonly-user"
+  password: "Fi&kc%zA"

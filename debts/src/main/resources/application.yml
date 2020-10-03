@@ -1,0 +1,40 @@
+server:
+  port: 8082
+
+eureka:
+  instance:
+    prefer-ip-adress: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+    register-with-eureka: true
+
+spring:
+  application:
+    name: debts
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  jmx:
+    enabled: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/basea
+    username: readonly-user
+    password: Fi&kc%zA
+  flyway:
+    baseline-on-migrate: true
+
+jwt:
+  config:
+    type: signed
+
+flyway:
+  url: jdbc:postgresql://localhost:5432/basea
+  schemas: public
+  user: "readonly-user"
+  password: "Fi&kc%zA"
+

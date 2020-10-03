@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "d632c8fc-7cd0-4e8e-a124-b0182a736c55",
+		"name": "Desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"elison\", \"password\": \"tw3456\"\r\n}"
+				},
+				"url": {
+					"raw": "{{local}}/auth/login",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDebtsById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJjdHkiOiJKV1QiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiZGlyIn0..KchXoXpVZ_u1EmdJE46IZg.ry3bQja9EDOziGpkGZmxJJJmBH58qCaHy9S-L-S7BjMpv-dmIhaNQTwo7Xd7CskUUbkfR7sdXGlyCrJz-pdHnCT_V63-BcknFqWc_d6As5m5ULBtD0u_mbtj2W5lGDVakSItvD2p_gbxwvim8SGq5ASEpd4yRDQh1G_XhejUHpRmDgo_mcC4CANrRJEcTOBXwuPu49hcVM99Qo8TDQQMMA2b-p04ip0n4M2kV7vqgfF_NJcoVECsgzZcMXY4sOjDmmYYR-8fXSQVfVkYK5lzc701zlZgx15MOwpkjDwQakQfMxTXMCbg2OFKMY2QoqxgUOzdpWUVZOb2OupxGrLsj6p0Ti-5tJIVUO5cBMXYM_5RIHa_31gsYwLU8iYt13Nl7Sw7woLMQCnOSDkdO7LsYL-MZp4JOluyUNHU3wASHLEUyet15gqAro6KsXqbReByxJQH43aZRz1mJ-DH9Mk-OpK4oEbGbmv_1Uuze6ncTdjKEIQlNweQsD1j73igvm-qmaJ65JGiW3oshikDrVdl5mZyt3huZSsmLExBA2jJsmRBpYd2WM77yW70sVOHh_JPZ2ZI5R69K2jPvhkgeqPOoR7YXBFpAOkALWV8XPxIfRyzKjJpfyZnBl6--zxgkieA1Pc6G6otrqde9OrbqkRNrwbSL3abiT80e7t6pvE_5W22-eqNJ-YB9CsihMiVFLvQeTtCV3u82vKkoT_4iaTm-eNDzTfhKu7i8trtneteZfDiCOVWWJX-pejMhYCrfakLRJyg_cHBoZRwcV-KssVrRiE30Uvuh6rKHjWqc3Blm09BK2gdbebVp2GaICFbrUH4nPFqy4iZ7YyGkrj1hcQ784YqerWj46QTQmBqxVca1ganICUgeKKGbk5O-jNW-7mknihBIo3CuYUScCphadQM43MjwvTPNXrgRflfOILD3VWPXzrqDUxtSuXVvmt0DOW9-t1a98dEF24ezxArXxuATx0DDfj2Di7zzEqp8dizYI9GVROJx0UuC6js1dKOrJC4IWecL3T6-PttQeEpQP_YR0f7UL8iHximKlp00jBZSp39M2o3RXHZqGqGyLE_7pCqvqRdkQK_PVk0kbGFdRpmji5h0OEye8EdgxlZXkMrpRv0DNA23TYMiNWogunKBv6GnjPcdjQu63RwN3u07f9iMAy1r0dCD0V4sgSmHfKbRu96XDoBpa8gs6GyTxaMOU8xHFRtUuNPoAxRQzx6oreZNoX7aq8gruAt7aPKOFX2Pb6GpPTym3g_oLH65_94nFSEKYDZrVX5eQhWK5ZwWaHnPO-e_XEblBXbTfDv3zyCn3QEUfz9STCP-pvShiB68SqkFVEvbf2k3YVPDASyNlsOw7-D5yHbTDF3XTwM8snFBO2Qb0H6scSn7gff8hFBRz7QFNabQB7UA5hbjstGLmflBX7OeFkvJRuYcK0UA5GxMB6XWUKUS6Cd0lYuF1OPpPmG.qX7um88v728ScahSlXbCRA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJjdHkiOiJKV1QiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiZGlyIn0..42Lp_iEIxvxI1dNwDGRYyw.YEIi79aDx4Exht_yLzY4LBpglj9fIc27VU-j7_rmFBCyaR8VDicvcVeKGXLdlas1U0PIXsBAJWb1knVjzcOUXz7_dOCUiQ_kiTXwboh9zaYzTjwkjF655t8xlUsePh-FdlPVe2Pyb7vCpeVX3NMyyYldub9O34iB-DzNuhDcRXRAury7mvUmSUb6kCu-Ohqty7bE6SqIRdkIfGrZvewanERvwPSva4bNZLhu4un2_Wl3yTuTJaOXq4BCfQ5wpiBcNyZz-YHx5ahtq1EFVr7UiHrlyDr2OB5WXwmNPdimC8AOrsZCE4ra7MzFf8Hqiik2oXa-ohdUBQ7Rw0G7ngVnCdZB7Ko2ObiW6P_5a6tmensQCz3POILdsmnYXtuoPEq-xxJdI-98vK2-tJJUzef2KF7RaOw4wlkGqZAnL20fUA2kalef0WG0EwyQmynxF-kjQbj3Sfa3woJc9W7LCDwkl_Fh8kf_7kOi_NVsZitmU5XS0bebt-p9FXuVzieJntcvffQ-t62mWQcX8GrKgWe2Dzuhj1ZcvYQ63r0u-Mujet3RyAOGX3WWGoLviPwDcSyvbx7SPs3ULNDDnMYU4HM0uqSemL-URnwDSWtEOhODG-1xjeI_OjrGaFiDfEg7yjxbJEhdC5XyiDg4KzZsLX4nV2Zdg9mnwaWxEp_tfrS9bseoxixnbE2uJCiaU0189sD_zUwEvGLqRzPFLQHxRPwGQEOY3BKaL2hRYFgMD_pynmvsvp2rJxqz_yPX-Xp5wRvW2QAysL582HoEz3CEDg9uGiyPr__8hO3r4TXpmQNUDOwKJABWC_vJDe70ydAk2-tTT_UQv1dvlc4ROcD_32K0zg5lzpUguWs6PeuRb72gUatz5pFVBK4FC1QEx2EaICgdal59DMCGLVP5xRDWQZVdSzC0NqzLIkQ9Y7iSAcdYJDTQ8kjbYFr-y46kpxL3YAz6P4BevqFaMj8J760SzqvYhjMo4naQ6Y8QM5wCmblAB403I2TRtgi_C0gT1ffSQUH9s9zBxppIiKITETy1ivTfhIGPWMHuWDnq0m4Qh9qsyl-vvGD2uzsywATrTBMYKK2F163PVysCw_-xnaIht9UIwoCjZkRQbxZta6PhG9rfpBIyOrzgvkLf517Db6VRjYYjnULX7bPHY51699woJRWNnwhsrEpUA0iV7Z1bwEBaGgfupd5jlpV_CVbi0bQ_BGPg2ihYQwoWrcH4XJL-YEphurdU2qouYB7HYfM8N3QI5uXuzvNMIyV2xHQDBpAxjx6sgOVrpsNvaSdqfuoKjeYuIe9NFenBL2kpK4Fn_0ZO_viBvn1WR7_KhWJNQgmJZmaM9ftvCEQ1MmapaSkPNdmM-qj1KZmFqdc2f5XOk2jzyiY6t4Dj7KcqQD7vLXWKW7Ng9Nf3acyTFy_3tvwEPAjsNMgTIsp21k8adQSiBHUTyMHsfzNrGKsy6ImuS4ZpvByL.HzKMmixV6ooaq0nRPav_hg",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{local}}/debts/person/1",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"debts",
+						"person",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPeople",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJjdHkiOiJKV1QiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiZGlyIn0..KchXoXpVZ_u1EmdJE46IZg.ry3bQja9EDOziGpkGZmxJJJmBH58qCaHy9S-L-S7BjMpv-dmIhaNQTwo7Xd7CskUUbkfR7sdXGlyCrJz-pdHnCT_V63-BcknFqWc_d6As5m5ULBtD0u_mbtj2W5lGDVakSItvD2p_gbxwvim8SGq5ASEpd4yRDQh1G_XhejUHpRmDgo_mcC4CANrRJEcTOBXwuPu49hcVM99Qo8TDQQMMA2b-p04ip0n4M2kV7vqgfF_NJcoVECsgzZcMXY4sOjDmmYYR-8fXSQVfVkYK5lzc701zlZgx15MOwpkjDwQakQfMxTXMCbg2OFKMY2QoqxgUOzdpWUVZOb2OupxGrLsj6p0Ti-5tJIVUO5cBMXYM_5RIHa_31gsYwLU8iYt13Nl7Sw7woLMQCnOSDkdO7LsYL-MZp4JOluyUNHU3wASHLEUyet15gqAro6KsXqbReByxJQH43aZRz1mJ-DH9Mk-OpK4oEbGbmv_1Uuze6ncTdjKEIQlNweQsD1j73igvm-qmaJ65JGiW3oshikDrVdl5mZyt3huZSsmLExBA2jJsmRBpYd2WM77yW70sVOHh_JPZ2ZI5R69K2jPvhkgeqPOoR7YXBFpAOkALWV8XPxIfRyzKjJpfyZnBl6--zxgkieA1Pc6G6otrqde9OrbqkRNrwbSL3abiT80e7t6pvE_5W22-eqNJ-YB9CsihMiVFLvQeTtCV3u82vKkoT_4iaTm-eNDzTfhKu7i8trtneteZfDiCOVWWJX-pejMhYCrfakLRJyg_cHBoZRwcV-KssVrRiE30Uvuh6rKHjWqc3Blm09BK2gdbebVp2GaICFbrUH4nPFqy4iZ7YyGkrj1hcQ784YqerWj46QTQmBqxVca1ganICUgeKKGbk5O-jNW-7mknihBIo3CuYUScCphadQM43MjwvTPNXrgRflfOILD3VWPXzrqDUxtSuXVvmt0DOW9-t1a98dEF24ezxArXxuATx0DDfj2Di7zzEqp8dizYI9GVROJx0UuC6js1dKOrJC4IWecL3T6-PttQeEpQP_YR0f7UL8iHximKlp00jBZSp39M2o3RXHZqGqGyLE_7pCqvqRdkQK_PVk0kbGFdRpmji5h0OEye8EdgxlZXkMrpRv0DNA23TYMiNWogunKBv6GnjPcdjQu63RwN3u07f9iMAy1r0dCD0V4sgSmHfKbRu96XDoBpa8gs6GyTxaMOU8xHFRtUuNPoAxRQzx6oreZNoX7aq8gruAt7aPKOFX2Pb6GpPTym3g_oLH65_94nFSEKYDZrVX5eQhWK5ZwWaHnPO-e_XEblBXbTfDv3zyCn3QEUfz9STCP-pvShiB68SqkFVEvbf2k3YVPDASyNlsOw7-D5yHbTDF3XTwM8snFBO2Qb0H6scSn7gff8hFBRz7QFNabQB7UA5hbjstGLmflBX7OeFkvJRuYcK0UA5GxMB6XWUKUS6Cd0lYuF1OPpPmG.qX7um88v728ScahSlXbCRA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/debts",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"debts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Histórico de compra",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJjdHkiOiJKV1QiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiZGlyIn0..EyeRWhYxH_n-aVdl9UX8cw.w3p7ESogL3JyMEj07ogJsZ-MabsGwQRPdpmWoPxWKHdN28QO7BHT0399gbqBXy_7qix6qlX9xs_ZSQEgvGuqBsg17LhYFZgDL_9yUWHjEc32CHfmi5Iwk1H7xQ_PPtDC0ELeARwRrQC3uxM-6pfK4AYy5LwfPHSotPwNtYPmFIf31W2_zqjIUKRoousJH-VKMbmXQrtavGKX_XVgxDcyIRRzgKEZSjJXV5L6FfjQrjqhkbYw_5YFao2ArCQNMDXGlNEegiZX5VHak4a9vGLYMw_qZVkF98pbony7t--GB6jkDvNMrAUVZRalDN_0GPd5wXMl00g1vQcMBvUuN5SjwtYse47ADm8c1fBKFUfX1m2ODpGzxINFbBnRfsNu68vesVHhuyx7MxdvsFpq9WOlS1GFzKbcOSJUs3cbsAiW50RR9VqgYjzGS6GpMa3heu4tGcIggcR7oeUiQWl1JLynWvlA-TcVW7PHAkVpcb-8Q4yhNVaW6S0OD24OkAYi6VkCOdk8GWyYsF5aG_cMuo5KhCief7qJzkfkS5qjXCwkedlFmcHljDY-ISkvu6AbCybXY8bXbKrtpLuViShgxPzSkeVrQQUAU6WKgnZcVFJNyppY7KeWL55eDS6B3nbscnoDDjoodwn5wHDRHjftmqSTvOc3aUymV64caTtRK4FJsjlzrVE2VX5ypTp4fzokdSeHNfNC_ZyTLiM6-UT1d4evbYaZMorMyKn9S8asMtSZ5Ghnm34N5TLWuds8QfXpOJCVfoB048wX0fRkrAZmDGwmztit1LDhJPa8xY_osl07fdpJU4K4UHCVe5SdrfKdRC4rchV6awOLbDBT0axJAg5dA9yOnqDXeBIrrS_PzN-ntUC5-VCBZYhQF27rnChDbShTeA528PmHNGG6ox4X_noFECEUYra4dKFIdryzgNNP4vs7pnWnP_vZ0dC1HY0jFdbSV-GVtq0s6viE7LWIQOtXJlxvHOA_i93dy1-X6jr53ak_TxBzx7ej5xlK2p56_-rzSbn-69R8UHdp96thTDWroTQs2IltOxHSvy9_Pe6vJIBXuqzRyfHbhgV1X3mPtFzpzxZFMruKgggkE78UjGm5fkDdGHlfhP4OaDiyDIFkKNC_tDatbHxAW5VYnlLJ1I45ydvhiF-t-BQFJE1c89-AAQIB9YSZovcxjKZ-gjNxeYHSXY5NpaJE_bzSq-3HaLgF6v6Ky0OJVYUicVfzAkiGXRyp3PNxw3fGta7knj2sTTM10X9O8HqxK--IcnmGUmtiaN-YrQRDOwPVYAoKtcZv0uYCsQVcnQ_K4WfOROSwZUXNrydxbMvDQZMg_o6XzjjABMGuz0vAARSydcU_MLpmrPauEzcTez1YAhd2ywqPiVl2yd9TYXTfzRErFr7MYQKeVNHXzEbxlTCTuUwmzs5GrcdfS_EbzN64hHcQ6kPp5EkAUP7l6GmqHfsul6HJ8ESL.X79FCLgrVJoROMVWDR1XsQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/consult-cpf/purchase-history/last/01234567897",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"consult-cpf",
+						"purchase-history",
+						"last",
+						"01234567897"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ultima consulta ao cpf",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJjdHkiOiJKV1QiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiZGlyIn0..oP67eFZdgr8ojB0NbOpdsA.kvnF_IEp6BYFn08PCleI4HXOCLYSP_PskqOFofSwMxZS_X3axBPjIJ_7SqKMyXMlccrtVUxvDY_KcMO_My4ypxN0SvLZIH388oDhzlIdxbVtqCS9m__gjHZT2-162fYASbt78aJQespmEiJRRzaVR7MZmdlwBu5JKHeW7tgPDQDpea6f6MMhpWeRKgbyMKsOeThtRxBmCAa6hCChuEUludm2U14kYkxbg2s9nwGzXBpxsRHn_FufBkWni6SzFLesJvw6yw6NDFvTwVHXhFRCdkxgefCgJN7h0JR_Nd5HKdKUrwX3D7-1mST4wYZXnwfhuuIQtFyd-Pq_BsDe5f-nRhBZcPM4z02aEBnM-MiMVERhGeUxp2Uavboni1XcTuOeCAXJ6lhCe24FqSyaYIkNDezAC7OvvDixUh95CSQd5cKqDs-rxbqkqaVS1TOJcpBuDAB9OvxSJIvngW5xMPuUQIp6JRmpavf4AmS1MDWuDj0xXSarUUZPUSfhqyrKqMTswpbT20yMW2vadPIFC9AQekkgu9zB2bnX3C1yHJerTJhaEBiT16v7tohayT2w418rZ23d9yoYe0yX4SS0gcPxvmGTiMVysAUWs0xvRV5TqYtZeRPtzGDanRqc0B8bAZP9eKRe3MH6HSNC7UFzBTp-YHfH44GWzg9xigXmqqwHE9cHd6z66tuGn1imyolom-TC7Jp-nHKrTnMZMknQZKZC-8lMtWYEPvw3-c6y59JsggPK2aL7hDdlaG_LtFxzOcYh0a5hWnnm3UQ0O5X0VGIu6o9Opjzyqh0FjRyHCc0T5b3if8elhs4n8fCoFF60Gkw7yQqHZHCnQ73R6jSMFqDYZzbuMkxG097XFYOp5Cc4ee-hFt5Ucg00mK3dG5QUbNsYDct56W1yc1oMPpHAgPVrLNWHTNcHB_xqVhO_4si2YS-IKNJUV_C7iNe6EQ6AzpScB2Yo0rM-XXtqj6NS4IWexLDqwS-TnUxvXYU4ftGs-NdcwFDG0PdMq_s3-D-4NQthR5gsxwT-H6Kw2T5rLW5HthjAH0lmnzT-LMuFeeZZ0Nriy6t5WDpFS-wyTxFKeL_WP6F8vo9GudL6KxuRgtwal0ecYPLwFk1OQ-FJEKAbfwAFDZGUUEwxKFvNqQa0CDCpY3ofh6PrKtCmQORn1VfSa-PhifK0kDVCIOngaH1fRUt8gXUwZOvF2Tdjl2g4u6lh7VqwWRnArV1BN6EXg1cyCGkoU3R0V2y_rTjH4c7QLgJrIomnKCMdk2y5wrcwusu6I11xFx9jtfmmXagW7jcRxxH05t8KYoi42GUn3QsnSmn5BRXysR74EOFi4zjUzckbVjuFtbvvzqRFdORgRTvrctCdj6BMLE8UAAcpJBluQLdV9b8aqGR8djw8FfR6RXklmoNwBGB6tJOVMNqB-udt8Pe4tg9kVRD6PBTet1jVio29Bj9rMG9EtFSHZ21A9r_J.9Bp4LVMgshHc_rn8mcJZJQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/consult-cpf/consult/last/01234567897",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"consult-cpf",
+						"consult",
+						"last",
+						"01234567897"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Propriedades pessoais",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJjdHkiOiJKV1QiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiZGlyIn0..jyGdw4CANMWPYP82QfsgjA._VrnWXGmixrNs7CeOjNJ3KCcGTxvCihU-gKxc9NsYsO318b2ajBQ2jlJWmkDbt67xUp_sGVlr84JG1ZNHESCoQo_kiEtajTHQroEnnHQqkg2ZQtllZGt_q2jWIa3uc1g1X35fsXaHsUaS-Y94xsUWWPNtdIfr1KxrgkdswnGMtcN7XeYQzTDAGct-pfiBldNfi3CAFNyQ6zjeR_jru0-pOAWl0T7C7nbyg4suFdade5orEPKsYcFro4SLpWJ9c0JMO2tACn9KErDjHTYpQSBCqfh-DNz37CGx95NoIvR6o-Rx1Ekmc9OhTvt9azXf5lQPauAiLPSDQxaKm7bmO8mrJ876W_KxiWtsmnlsauyhfGztJzAFRuN0fsIo52rymKf4CQy1nJdkbkIrEKG4fQBLYEJ-qq6k2WOWEXHJwdneOtWpTbwZVlOXRvSekPmPBGzxeUpqagVb3UGMiIL8S7Sbcj077DrAN-a7MFxlERPP3sFIwOKqEaWxQqsBzVxDd9upe1-tcRjOz-ejV84Fu6luf8D4pIDPFF2rFa_H95MH8sHTzThsQ8XMP9n0LdZ3ZU_Qu7AeJUb2fElqAHh4AWFzattZUkvGUBzmdhjtHPs6GNm0SNBo3_RWQ2Nadwv1FmQFkwfP64Br5f8XsZIuysjnktcQJ29JYw_v9xnUoKesBHsLf1ViH_lP02MjAQuMARcQyb-QTBKjDY8kOa4jdzIEmtQdi5qZtzMvB4ZP3uvcdrnecpoykOD6U3ndlz18L0x9c4jl3iiPh02undLBV-_oAjouGME-vMcS8FOsMLEGJnPrpMpaI2YwBIenliEe_VKLv74nmsyq5ZUNmCK8eot7-AQQ_DTskDVfgVgtPhroG0Ze0Ae6Hre_p2CKtG15cPgQFuPiJtDmntzW7i-W2Vf6xA_aM_IIespx80jX3uugWV5UlUJG5YQvnzy0x2eq7XwGqj5nQdv7AdilXJLjLf9eFLIbaZ0WchV2xJ8szAv7nhKEcFI_0CF2oz-_fXBp4X4Uk0e95fE6p6vbWXLY0944_Ey3KqeoU3MogC3kxs2zlnQUYx2tvBadgcZ7ctllFIIg9AFj74mt2AfDYPkcps89YYkUOaa-pwMvjkZOEgE_V36lx2CG2BGfVjNXWUyVXDGIpkjPZI3ICmTfMQa9O1335jv6q5dkvgz_uJhSXCbk1B9RR5xBIrNXIF_BGVG1On5t_o8ovIdPs4iwMnc8bBXhUt93wm6lFHuLgl9vP0ixRyPN3kYxudyEEDXGlHZJb_lv_3hguTrDS7XC4lKihXdRAwCjn-5NOypJqDbEFL8eLGP1Vk8zZ8xHHwrqiWUyeOqMwuCBcH44ZfUoeA-WiiixwfU2mAkRclrxuPpgzecsG4PPDpAjk1oWa2KoBQh0WDgJcEuLwBdtz_WQUoOz6TKmo9LBDpMYKfVXqbieb-7IzcX6nM5_h8a13dR3B2C2n6O.VjkQ7OMY2JT7rLNJsFH3rQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/credit-score/person/properties/45806213013",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"credit-score",
+						"person",
+						"properties",
+						"45806213013"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movimentações",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJjdHkiOiJKV1QiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiZGlyIn0..jyGdw4CANMWPYP82QfsgjA._VrnWXGmixrNs7CeOjNJ3KCcGTxvCihU-gKxc9NsYsO318b2ajBQ2jlJWmkDbt67xUp_sGVlr84JG1ZNHESCoQo_kiEtajTHQroEnnHQqkg2ZQtllZGt_q2jWIa3uc1g1X35fsXaHsUaS-Y94xsUWWPNtdIfr1KxrgkdswnGMtcN7XeYQzTDAGct-pfiBldNfi3CAFNyQ6zjeR_jru0-pOAWl0T7C7nbyg4suFdade5orEPKsYcFro4SLpWJ9c0JMO2tACn9KErDjHTYpQSBCqfh-DNz37CGx95NoIvR6o-Rx1Ekmc9OhTvt9azXf5lQPauAiLPSDQxaKm7bmO8mrJ876W_KxiWtsmnlsauyhfGztJzAFRuN0fsIo52rymKf4CQy1nJdkbkIrEKG4fQBLYEJ-qq6k2WOWEXHJwdneOtWpTbwZVlOXRvSekPmPBGzxeUpqagVb3UGMiIL8S7Sbcj077DrAN-a7MFxlERPP3sFIwOKqEaWxQqsBzVxDd9upe1-tcRjOz-ejV84Fu6luf8D4pIDPFF2rFa_H95MH8sHTzThsQ8XMP9n0LdZ3ZU_Qu7AeJUb2fElqAHh4AWFzattZUkvGUBzmdhjtHPs6GNm0SNBo3_RWQ2Nadwv1FmQFkwfP64Br5f8XsZIuysjnktcQJ29JYw_v9xnUoKesBHsLf1ViH_lP02MjAQuMARcQyb-QTBKjDY8kOa4jdzIEmtQdi5qZtzMvB4ZP3uvcdrnecpoykOD6U3ndlz18L0x9c4jl3iiPh02undLBV-_oAjouGME-vMcS8FOsMLEGJnPrpMpaI2YwBIenliEe_VKLv74nmsyq5ZUNmCK8eot7-AQQ_DTskDVfgVgtPhroG0Ze0Ae6Hre_p2CKtG15cPgQFuPiJtDmntzW7i-W2Vf6xA_aM_IIespx80jX3uugWV5UlUJG5YQvnzy0x2eq7XwGqj5nQdv7AdilXJLjLf9eFLIbaZ0WchV2xJ8szAv7nhKEcFI_0CF2oz-_fXBp4X4Uk0e95fE6p6vbWXLY0944_Ey3KqeoU3MogC3kxs2zlnQUYx2tvBadgcZ7ctllFIIg9AFj74mt2AfDYPkcps89YYkUOaa-pwMvjkZOEgE_V36lx2CG2BGfVjNXWUyVXDGIpkjPZI3ICmTfMQa9O1335jv6q5dkvgz_uJhSXCbk1B9RR5xBIrNXIF_BGVG1On5t_o8ovIdPs4iwMnc8bBXhUt93wm6lFHuLgl9vP0ixRyPN3kYxudyEEDXGlHZJb_lv_3hguTrDS7XC4lKihXdRAwCjn-5NOypJqDbEFL8eLGP1Vk8zZ8xHHwrqiWUyeOqMwuCBcH44ZfUoeA-WiiixwfU2mAkRclrxuPpgzecsG4PPDpAjk1oWa2KoBQh0WDgJcEuLwBdtz_WQUoOz6TKmo9LBDpMYKfVXqbieb-7IzcX6nM5_h8a13dR3B2C2n6O.VjkQ7OMY2JT7rLNJsFH3rQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/consult-cpf/financial/data/01234567897",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"consult-cpf",
+						"financial",
+						"data",
+						"01234567897"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

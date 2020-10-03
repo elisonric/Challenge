@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: readonly-user
+      POSTGRES_PASSWORD: Fi&kc%zA
+    volumes:
+      - microservices_challenge:/var/lib/postgres
+
+volumes:
+  microservices_challenge:
