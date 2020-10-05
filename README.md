@@ -30,8 +30,12 @@ You will need the 8080, 8081, 8082, 8083,8084,8085 ports available
 
 Start Discovery microservice first and then it doesn't matter the order of the next ones
 
+### SWAGGER DOC
+
 After the application has started, can use on port 8080/gateway/nameService/swagger-ui.htmt.
 
 Name Services: discovery, gateway, auth, debts, consult-cpf, credit-score
+
+### POSTMAN
 
 Endpoints [Postman Collection](Desafio.postman_collection.json)
