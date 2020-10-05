@@ -1,3 +1,7 @@
+## PROJECT STRUCTURE
+
+[Project Structure](https://github.com/elisonric/Desafio/blob/main/project%20structure.png)
+
 # How to start the application
 
 ## Starting backend
